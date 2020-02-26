@@ -9,3 +9,5 @@ Omnistack challenge #9
 - React
 - React-native
 - MongooDB
+- Imnsonia
+- Nodemon
