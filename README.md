@@ -11,3 +11,5 @@ Omnistack challenge #9
 - MongooDB
 - Imnsonia
 - Nodemon
+- Axios
+- CORSS
