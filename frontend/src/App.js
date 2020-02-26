@@ -17,7 +17,7 @@ function App() {
         <label htmlFor="email">E-MAIL *</label>
         <input type="email" id="email" placeholder="Your email"/>
 
-        <button type="submit">Enter</button>
+        <button type="submit" className="btn">Enter</button>
        </form>
      </div>
    </div>
