@@ -1,9 +1,26 @@
 import React from 'react';
 import './App.css';
 
+import logo from './assets/logo.svg';
+
 function App() {
   return (
-   <h1>Hello world</h1>
+   <div className="container">
+     <img src={logo} alt="AirCnC"/>
+
+     <div className="content">
+       <p>
+         Offer <strong>seats</strong> to programmers and find <strong>talents</strong>!
+       </p>
+
+       <form action="">
+        <label htmlFor="email">E-MAIL *</label>
+        <input type="email" id="email" placeholder="Your email"/>
+
+        <button type="submit">Enter</button>
+       </form>
+     </div>
+   </div>
   );
 }
 
