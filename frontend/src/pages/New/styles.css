@@ -12,3 +12,11 @@ label#thumbnail{
 label#thumbnail input{
     display: none;
 }
+
+label#thumbnail.has-thumbnail{
+    border: 0px;
+}
+
+label#thumbnail.has-thumbnail img{
+    display: none;
+}
