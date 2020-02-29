@@ -16,6 +16,9 @@ export default function New( { history } ){
     },[thumbnail]);
 
     async function handleSubmit(event){
+
+        event.preventDefault(); 
+
         const data = new FormData();
         const user_id = localStorage.getItem('user');
 
@@ -54,7 +57,7 @@ export default function New( { history } ){
             id="techs"
             placeholder="Which techs are used?"
             value={techs}
-            onChange={event => setCompany(event.target.value)}
+            onChange={event => setTechs(event.target.value)}
         />
 
         <label htmlFor="price">DAILY PRICE *<span> (if free leave blank)</span></label>
