@@ -21,7 +21,7 @@ export default function Dashboard() {
         <>
             <ul className="spot-list">
                 {spots.map(spot => (
-                    <li>
+                    <li key={spot._id}>
                         <header />
                         <strong>{spot.company}</strong>
                         <span>{spot.price}</span>
