@@ -1,6 +1,6 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
-import Book from '.T/pages/Book';
+import Book from './pages/Book';
 import Login from './pages/Login';
 import List from './pages/List';
 
