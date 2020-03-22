@@ -5,7 +5,7 @@ import api from '../services/api';
 
 import logo from '../assets/logo.png';
 
-export default function Login(){
+export default function Login({ navigation }){
     
     const [email, setEmail] = useState('');
     const [techs, setTechs] = useState('');
@@ -19,6 +19,8 @@ export default function Login(){
 
         await AsyncStorage.setItem('user', _id);
         await AsyncStorage.setItem('techs', techs);
+
+        navigation.navigate('List');
     }
     
     return (
