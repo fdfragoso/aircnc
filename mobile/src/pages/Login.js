@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, KeyboardAvoidingView, Text, TextInput, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, AsyncStorage, KeyboardAvoidingView, Text, TextInput, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 import api from '../services/api';
 
@@ -17,7 +17,8 @@ export default function Login(){
 
         const { _id } = response.data;
 
-        console.log(_id);
+        await AsyncStorage.setItem('user', _id);
+        await AsyncStorage.setItem('techs', techs);
     }
     
     return (
